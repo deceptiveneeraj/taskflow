@@ -1,0 +1,202 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        border: 1px solid red;
+        padding: 8px;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(251, 255, 255);
+    }
+
+    /* header nav{
+        
+    } */
+    header nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header nav ul li {
+        list-style: none;
+    }
+
+    header nav ul li a:hover {
+        color: green;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+    }
+
+    header nav ul li a img {
+        height: 38px;
+    }
+
+    header nav ul li:first-child {
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    header nav ul li:last-child {
+        margin-top: 10px;
+    }
+
+    .form {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .form form {
+        border-bottom: 2px solid rebeccapurple;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        /* border: 2px solid rebeccapurple; */
+    }
+
+    .form form h3 {
+        float: left;
+        margin: 0 0 20px 3%;
+        color: rebeccapurple;
+        font-size: 1.4em;
+    }
+
+    .form form label {
+        font-size: large;
+    }
+
+    .form form input {
+        width: 95%;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        height: 40px;
+        padding-left: 12px;
+        border: none;
+        border-bottom: 3px solid rebeccapurple;
+    }
+
+    .form form button {
+        font-size: 15px;
+        margin-left: 40px;
+        padding: 10px 20px 10px 20px;
+        float: inline-start;
+        border-radius: 15px;
+        background: none;
+        border: none;
+        border-bottom: 3px solid green;
+    }
+
+    .form form button:hover {
+        border: 2px solid green;
+    }
+
+    #cancel-btn {
+        border-bottom: 3px solid red;
+        margin-left: 20px;
+        color: red;
+    }
+
+    #cancel-btn:hover {
+        border: 2px solid red;
+    }
+
+    /* .tasks-section{
+
+    } */
+    .tasks-section h2 {
+        color: rebeccapurple;
+        margin: 10px 0px 20px 3%;
+    }
+
+    .task-item {
+        margin: 10px 3%;
+        position: relative;
+    }
+
+    .task-item:hover {
+        background-color: #efeded;
+        border-radius: 15px;
+    }
+
+    .task-item .task-check {
+        position: absolute;
+        top: 13px;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .task-item h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+
+    .task-item p {
+        font-size: 17px;
+        padding: 0 10px 10px 10px;
+    }
+
+    .task-item .delete-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid red;
+        padding: 10px 15px;
+        border-radius: 15px;
+        font-size: 15px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .task-item .delete-btn:hover {
+        border: 1px solid red;
+    }
+
+    .task-item .edit-btn {
+        position: absolute;
+        top: 10px;
+        right: 90px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid green;
+        padding: 10px 15px;
+        border-radius: 15px;
+        font-size: 15px;
+        color: green;
+        cursor: pointer;
+    }
+
+    .task-item .edit-btn:hover {
+        border: 1px solid green;
+    }
+
+    /* i want in mobile phone the edit button and and delete button in vertical alignment */
+    @media only screen and (max-width: 600px) {
+        .task-item .edit-btn {
+            position: absolute;
+            top: -8px;
+            right: 20px;
+        }
+
+        .task-item .delete-btn {
+            position: absolute;
+            top: 30px;
+            right: 10px;
+        }
+    }

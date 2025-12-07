@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Flow</title>
+
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png?v=1">
+
+    <!-- For iPhone/iPad -->
+    <link rel="apple-touch-icon" href="./assets/img/favicon.png?v=1">
+
+    <!-- For Android & Progressive Web Apps -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Optional: Shortcut icon fallback -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png?v=1">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="https://deceptiveneeraj.github.io/taskflow/"><img src="./assets/img/logo.png" alt="📝 TaskFlow"></a></li>
+                <li><a href="https://deceptiveneeraj.github.io/taskflow/">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="form">
+            <form action="">
+                <h3>Add New Task</h3>
+                <!-- <label for="">Title</label><br> -->
+                <input type="text" id="title" placeholder="Enter Title ..." autofocus><br>
+
+                <!-- <label for="">Content</label><br> -->
+                <input type="text" id="content" placeholder="Enter Content ..." autofocus><br>
+
+                <button type="button" class="add-btn" onclick="saveTask()"><i class="fas fa-plus"></i> Add Task</button>
+                <button type="button" id="cancel-btn" onclick="cancelEdit()" style="display: none;"><i class="fas fa-times"></i> Cancel</button>
+            </form>
+        </div>
+
+        <div class="tasks-section">
+            <h2>Your Tasks</h2>
+            <div id="taskList"></div>
+            <!-- <ul id="taskList"> -->
+                <!-- <h2 id="list-title"></h2>
+                <p id="list-content"></p> -->
+            <!-- </ul> -->
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
