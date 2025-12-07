@@ -32,6 +32,7 @@ function saveTask() {
         localStorage.setItem("tasks", JSON.stringify(tasks));
 
         // Show task without refresh
+        emptyMessage.style.display = "none";
         appendTask(newTask);
     } else {
         // Update existing task
@@ -77,20 +78,13 @@ function loadTasks(){
     const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
     taskList.innerHTML = "";
 
-    tasks.forEach(task => {
-        appendTask(task);
-    });
+    const emptyMessage = document.getElementById("emptyMessage");
 
-    if(tasks.length === 0) {
-        const emptyMessage = "<h3>No Tasks Available. Please add some tasks.</h3>";
-        const icon = '<i class="fas fa-clipboard-list" style="font-size:48px;color:gray; margin-bottom:20px"></i>';
-        
-
-        document.getElementById("taskList").innerHTML = icon + emptyMessage;
-        document.getElementById("taskList").style.textAlign = "center";
-        document.getElementById("taskList").style.marginTop = "5%";
-        document.getElementById("taskList").style.color = "gray";
-        document.getElementById("taskList").style.fontSize = "larger";
+    if (tasks.length === 0) {
+        emptyMessage.style.display = "block";  
+    } else {
+        emptyMessage.style.display = "none"; 
+        tasks.forEach(task => appendTask(task)); 
     }
 }
 

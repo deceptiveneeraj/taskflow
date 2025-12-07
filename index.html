@@ -27,7 +27,8 @@
     <header>
         <nav>
             <ul>
-                <li class="logo"><a href="https://deceptiveneeraj.github.io/taskflow/"><img src="./assets/img/logo.png" alt="📝 TaskFlow"></a></li>
+                <li class="logo"><a href="https://deceptiveneeraj.github.io/taskflow/"><img src="./assets/img/logo.png"
+                            alt="📝 TaskFlow"></a></li>
                 <li><a href="https://deceptiveneeraj.github.io/taskflow/">Home</a></li>
             </ul>
         </nav>
@@ -44,15 +45,21 @@
                 <input type="text" id="content" placeholder="Enter Content ..." autofocus><br>
 
                 <button type="button" class="add-btn" onclick="saveTask()"><i class="fas fa-plus"></i> Add Task</button>
-                <button type="button" id="cancel-btn" onclick="cancelEdit()" style="display: none;"><i class="fas fa-times"></i> Cancel</button>
+                <button type="button" id="cancel-btn" onclick="cancelEdit()" style="display: none;"><i
+                        class="fas fa-times"></i> Cancel</button>
             </form>
         </div>
 
         <div class="tasks-section">
             <h2>Your Tasks</h2>
+            <div id="emptyMessage"
+                style="display:none; text-align:center; margin-top:8%; color:gray; font-size:larger;">
+                <i class="fas fa-clipboard-list" style="font-size:48px; margin-bottom:20px"></i>
+                <h3>No Tasks Available. Please add some tasks.</h3>
+            </div>
             <div id="taskList"></div>
             <!-- <ul id="taskList"> -->
-                <!-- <h2 id="list-title"></h2>
+            <!-- <h2 id="list-title"></h2>
                 <p id="list-content"></p> -->
             <!-- </ul> -->
         </div>
