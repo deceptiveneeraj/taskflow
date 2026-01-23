@@ -176,8 +176,8 @@ section {
     position: absolute;
     top: 13px;
     left: 10px;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
 }
 
 .task-item h3 {
@@ -232,6 +232,7 @@ section {
 .task-desc {
     max-width: 100%;
     margin-top: 1.5%;
+    margin-left: 1%;
 }
 
 .todo-desc {
@@ -622,11 +623,6 @@ section {
 
     .task-card {
         padding-bottom: 5%;
-    }
-
-    .task-check {
-        width: 20px;
-        height: 20px;
     }
 
     .form h3,
