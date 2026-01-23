@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       { path: 'profile', element: <ProtectedRoute><Profile /></ProtectedRoute> },
       { path: 'about', element: <ProtectedRoute><About /></ProtectedRoute> },
 
+      { index: true, element: <PublicRoute><Login /></PublicRoute> },
+      { index: true, element: <PublicRoute><Signup /></PublicRoute> },
+      { index: true, element: <PublicRoute><ForgotPassword /></PublicRoute> },
+
       { path: 'login', element: <PublicRoute><Login /></PublicRoute> },
       { path: 'signup', element: <PublicRoute><Signup /></PublicRoute> },
       { path: 'forgot-password', element: <PublicRoute><ForgotPassword /></PublicRoute> },
