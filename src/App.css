@@ -639,7 +639,7 @@ section {
     }
 
     .task-item h3 {
-        font-size: 15px;
+        font-size: 16px;
         width: 75%;
     }
 
@@ -652,15 +652,13 @@ section {
         font-size: 0.9rem;
     }
 
-    .task-desc {
+    .todo-desc {
         max-width: 100%;
         margin-top: 5%;
-    }
-
-    .todo-desc {
+        margin-left: 10px;
         max-width: 100% !important;
         display: inline;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .task-desc small {
