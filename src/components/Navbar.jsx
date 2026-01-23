@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useUserData } from "../context/UserDataContext";
-import logo from '../assets/img/logo.png';
+import logo from '../../public/logo.png';
 import { getAuth, signOut } from "firebase/auth";
 import { app } from "../Firebase";
 
