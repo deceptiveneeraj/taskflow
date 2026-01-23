@@ -42,9 +42,9 @@ const Navbar = () => {
     <>
       <nav>
         <ul>
-          <li className="mobile-icon" onClick={toggleSidebar}>
+          {uid && <li className="mobile-icon" onClick={toggleSidebar}>
             <i className="fa fa-navicon"></i>
-          </li>
+          </li>}
 
           <li className="logo-item">
             <NavLink to="/" className={({ isActive }) => isActive ? "navIsActive" : ""}>
@@ -52,9 +52,9 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="mobile-icon" onClick={toggleMenu}>
+          {uid && <li className="mobile-icon" onClick={toggleMenu}>
             <i className="fa fa-sliders"></i>
-          </li>
+          </li>}
 
           <li className="desktop-only"><NavLink to="/">Home</NavLink></li>
           <li className="desktop-only"><NavLink to="/profile">Profile</NavLink></li>
