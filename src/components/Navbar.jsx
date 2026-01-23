@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <li className="logo-item">
             <NavLink to="/" className={({ isActive }) => isActive ? "navIsActive" : ""}>
-              <img src={logo} alt="📝 Task Flow" />
+              <img src={logo} alt="📝 TaskFlow" />
             </NavLink>
           </li>
 
