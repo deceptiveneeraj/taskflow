@@ -17,9 +17,11 @@ const Navbar = () => {
     signOut(auth)
       .then(() => {
         alert("Logged out!");
+        closeBoth();
       })
       .catch((error) => {
         alert(error.message);
+        closeBoth();
       });
   }
 

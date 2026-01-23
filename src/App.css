@@ -248,6 +248,10 @@ section {
     font-size: 14px;
 }
 
+.task-card small {
+    margin-left: 2%;
+}
+
 .task-card.completed {
     opacity: 0.6;
 }
