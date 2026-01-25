@@ -6,9 +6,9 @@
 
 **A modern, cloud-synced task management application**
 
-[![React](https://img.shields.io/badge/React-19.2-61dafb?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
-[![Firebase](https://img.shields.io/badge/Firebase-10.x-ffca28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com/)
-[![Vite](https://img.shields.io/badge/Vite-5.x-646cff?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-19.2.0-61dafb?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-12.8.0-ffca28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Vite](https://img.shields.io/badge/Vite-7.2.4-646cff?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 [Live Demo](https://taskflow-olive-seven.vercel.app/)
@@ -260,7 +260,7 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 **Neeraj**
 
 - GitHub: [@DeceptiveNeeraj](https://github.com/DeceptiveNeeraj)
-- Project Link: [https://github.com/your-username/taskflow](https://github.com/your-username/taskflow)
+- Project Link: [https://taskflow-olive-seven.vercel.app/](https://taskflow-olive-seven.vercel.app/)
 
 ---
 
