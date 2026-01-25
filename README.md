@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Task Flow Logo](./src/assets/img/logo.png)
+![Task Flow Logo](./public/logo.png)
 
 **A modern, cloud-synced task management application**
 
