@@ -23,7 +23,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         // console.log("Logged in UID:", user.uid);
-        alert("Login successful!");
+        // alert("Login successful!");
         navigate("/", { replace: true });
         emailRef.current.value = "";
         passwordRef.current.value = "";

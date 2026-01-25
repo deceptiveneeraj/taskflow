@@ -85,7 +85,7 @@ function Signup() {
         createdAt: Date.now()
       });
 
-      alert("✅ Account created!");
+      // alert("✅ Account created!");
       navigate("/");
 
     } catch (err) {
