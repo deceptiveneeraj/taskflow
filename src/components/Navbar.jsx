@@ -16,7 +16,7 @@ const Navbar = () => {
     e.preventDefault();
     signOut(auth)
       .then(() => {
-        alert("Logged out!");
+        // alert("Logged out!");
         closeBoth();
       })
       .catch((error) => {
