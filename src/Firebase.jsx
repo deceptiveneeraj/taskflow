@@ -8,17 +8,16 @@ import { initializeApp } from "firebase/app";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDs5oGflUSX0cEoCCv7B88sjbWqs1mGUqw",
-  authDomain: "taskflow-db-01.firebaseapp.com",
-  projectId: "taskflow-db-01",
-  storageBucket: "taskflow-db-01.firebasestorage.app",
-  messagingSenderId: "66787917556",
-  appId: "1:66787917556:web:68b9b696e94516a8e2a8a1",
-  measurementId: "G-J85K81CFPV",
-
-  databaseURL: "https://taskflow-db-01-default-rtdb.firebaseio.com"
-
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
 };
+
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
