@@ -29,7 +29,7 @@ const ForgotPassword = () => {
       
       setEmailSent(true);
       setLastSentEmail(email);
-      alert("✅ Password reset email sent! Check your inbox.");
+      alert("✅ Password reset email sent! Check your Inbox or Spam.");
       
     } catch (error) {
       console.error("Password reset error:", error);
