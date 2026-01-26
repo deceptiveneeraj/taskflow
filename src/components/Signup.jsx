@@ -4,6 +4,9 @@ import { getAuth, fetchSignInMethodsForEmail, createUserWithEmailAndPassword } f
 import { getDatabase, ref, set } from "firebase/database";
 import { app } from "../Firebase";
 
+import { generateOTP } from "../utils/otp";
+import { sendOtpEmail } from "../utils/OtpSend";
+
 function Signup() {
   const [step, setStep] = useState(1);
   const [generatedCode, setGeneratedCode] = useState("");
@@ -31,27 +34,30 @@ function Signup() {
 
   // STEP 1: CHECK EMAIL
   const handleVerifyEmail = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      const methods = await fetchSignInMethodsForEmail(auth, form.email);
+  try {
+    const methods = await fetchSignInMethodsForEmail(auth, form.email);
 
-      if (methods.length > 0) {
-        alert("⚠️ You already have an account. Please login.");
-        navigate("/login");
-        return;
-      }
-
-      const code = Math.floor(100000 + Math.random() * 900000).toString();
-      setGeneratedCode(code);
-
-      alert("Verification code : " + code);
-      setStep(2);
-
-    } catch (err) {
-      alert(err.message);
+    if (methods.length > 0) {
+      alert("⚠️ You already have an account. Please login.");
+      navigate("/login");
+      return;
     }
-  };
+
+    const code = generateOTP();
+    setGeneratedCode(code);
+
+    await sendOtpEmail(form.email, code);
+
+    alert("✅ OTP sent to your email");
+    setStep(2);
+
+  } catch (err) {
+    alert("❌ Failed to send email: " + err.message);
+  }
+};
+
 
   // STEP 2: VERIFY CODE
   const handleCheckCode = (e) => {

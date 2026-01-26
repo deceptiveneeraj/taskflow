@@ -29,7 +29,8 @@ const Login = () => {
         passwordRef.current.value = "";
       })
       .catch((error) => {
-        alert(error.message);
+        // alert(error.message);
+        alert("Email and Password are not Match.")
       });
   }
 
