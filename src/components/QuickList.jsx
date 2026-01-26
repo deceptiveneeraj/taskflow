@@ -80,7 +80,6 @@ const QuickList = () => {
               <button onClick={() => handleDelete(id)} className='delete-btn desktop-only'>Delete</button>
               <button onClick={() => handleEdit(id, item)} className='edit-btn mobile-icon'><i className="fa fa-edit"></i></button>
               <button onClick={() => handleDelete(id)} className='delete-btn mobile-icon'><i className="fa fa-trash"></i></button>
-            
             </div>
             <small>
               {new Date(item.createdAt).toLocaleString()}

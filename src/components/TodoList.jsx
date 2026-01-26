@@ -69,9 +69,9 @@ const TodoList = () => {
                 onChange={() => toggleComplete(id, todo.completed)}
               />
               <h3>{todo.title}</h3>
-              <button onClick={() => handleEdit(id, item)} className='edit-btn desktop-only'>Edit</button>
+              <button onClick={() => handleEdit(id, todo)} className='edit-btn desktop-only'>Edit</button>
               <button onClick={() => handleDelete(id)} className='delete-btn desktop-only'>Delete</button>
-              <button onClick={() => handleEdit(id, item)} className='edit-btn mobile-icon'><i className="fa fa-edit"></i></button>
+              <button onClick={() => handleEdit(id, todo)} className='edit-btn mobile-icon'><i className="fa fa-edit"></i></button>
               <button onClick={() => handleDelete(id)} className='delete-btn mobile-icon'><i className="fa fa-trash"></i></button>
             </div>
             <div className="task-desc">
